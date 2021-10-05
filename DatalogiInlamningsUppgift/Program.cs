@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DatalogiInlamningsUppgift.ProgramLogic;
+using System;
 
 namespace DatalogiInlamningsUppgift
 {
@@ -6,7 +7,8 @@ namespace DatalogiInlamningsUppgift
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            PrimNumbers prim = new PrimNumbers();
+            prim.Introduction();
         }
     }
 }
