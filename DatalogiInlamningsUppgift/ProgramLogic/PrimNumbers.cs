@@ -10,6 +10,9 @@ namespace DatalogiInlamningsUppgift.ProgramLogic
     {
         PrimCalculator calc = new PrimCalculator();
 
+        /// <summary>
+        /// Greets the user
+        /// </summary>
         public void Introduction()
         {
             
@@ -18,6 +21,9 @@ namespace DatalogiInlamningsUppgift.ProgramLogic
             
         }
 
+        /// <summary>
+        /// Main menu with instructions for the user
+        /// </summary>
         public void MainMenu()
         {
             InputHelper helper = new InputHelper();
