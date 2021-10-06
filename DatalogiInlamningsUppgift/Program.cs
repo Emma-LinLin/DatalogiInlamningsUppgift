@@ -6,8 +6,8 @@ namespace DatalogiInlamningsUppgift
     {
         static void Main(string[] args)
         {
-            PrimNumbers prim = new PrimNumbers();
-            prim.Introduction();
+            MenuHandler menu = new MenuHandler();
+            menu.Introduction();
         }
     }
 }

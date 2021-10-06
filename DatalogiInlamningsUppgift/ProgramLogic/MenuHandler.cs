@@ -4,7 +4,7 @@ using System;
 
 namespace DatalogiInlamningsUppgift.ProgramLogic
 {
-    class PrimNumbers
+    class MenuHandler
     {
         PrimCalculator calc = new PrimCalculator();
 
