@@ -37,6 +37,10 @@ namespace DatalogiInlamningsUppgift.ProgramLogic
                 {
                     Console.WriteLine("That's a prim, we added it to your list!");
                 }
+                else
+                {
+                    Console.WriteLine("That's not a prim number");
+                }
 
                 Console.WriteLine("To print list enter [P]");
                 Console.WriteLine("To add next prim number to your list enter [A]");

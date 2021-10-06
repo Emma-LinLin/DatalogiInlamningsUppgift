@@ -10,24 +10,25 @@ namespace DatalogiInlamningsUppgift.Calculator
         public List<int> primNumbers = new List<int>();
 
         /// <summary>
-        /// Checks if the number given by the user is a prim number
+        /// Checks if the number given by the user is a prim number,
+        /// by checking if the number of dividers is equal to 2
         /// </summary>
         /// <param name="number">user input</param>
         /// <returns>boolean, true if prim number, false if not</returns>
         public bool Calculate(int number)
         {
-            if(number < 1)
+
+            int dividers = default;
+
+            for(int i = 1; i <= number; i++)
             {
-                return false;
-            }
-            if(number == 2 || number == 5)
-            {
-                primNumbers.Add(number);
-                return true;
+                if(number % i == 0)
+                {
+                    dividers++;
+                }
             }
 
-            int lastDigit = number % 10;
-            if(lastDigit == 1 || lastDigit == 3 || lastDigit == 7 || lastDigit == 9)
+            if(dividers == 2)
             {
                 primNumbers.Add(number);
                 return true;
@@ -56,7 +57,8 @@ namespace DatalogiInlamningsUppgift.Calculator
         }
 
         /// <summary>
-        /// Adds the closest prim number based off the highest number in the list of prim numbers
+        /// Adds the closest prim number based off the highest number in the list of prim numbers.
+        /// As soon as the respons is true the number found will be added to the list of prims.
         /// </summary>
         public void AddPrim()
         {
