@@ -1,5 +1,4 @@
 ﻿using DatalogiInlamningsUppgift.ProgramLogic;
-using System;
 
 namespace DatalogiInlamningsUppgift
 {

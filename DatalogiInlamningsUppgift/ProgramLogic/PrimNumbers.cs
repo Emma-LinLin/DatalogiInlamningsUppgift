@@ -1,8 +1,6 @@
 ﻿using DatalogiInlamningsUppgift.Calculator;
 using DatalogiInlamningsUppgift.Helper;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DatalogiInlamningsUppgift.ProgramLogic
 {
@@ -15,10 +13,8 @@ namespace DatalogiInlamningsUppgift.ProgramLogic
         /// </summary>
         public void Introduction()
         {
-            
             Console.WriteLine("Welcome to the prim calculator!");
             MainMenu();
-            
         }
 
         /// <summary>
@@ -60,8 +56,6 @@ namespace DatalogiInlamningsUppgift.ProgramLogic
                     calc.AddPrim();
                 }
             }
-            
-
         }
     }
 }
