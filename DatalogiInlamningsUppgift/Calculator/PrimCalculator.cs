@@ -25,6 +25,10 @@ namespace DatalogiInlamningsUppgift.Calculator
                 {
                     dividers++;
                 }
+                if(dividers > 2)
+                {
+                    break;
+                }
             }
 
             if(dividers == 2)
