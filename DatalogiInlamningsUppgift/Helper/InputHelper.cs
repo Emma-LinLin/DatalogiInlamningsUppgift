@@ -22,7 +22,7 @@ namespace DatalogiInlamningsUppgift.Helper
                 }
                 catch (Exception)
                 {
-                    Console.WriteLine("Only numbers please! Try again");
+                    Console.WriteLine("Only positive integers please! Try again");
                 }
             }
         }

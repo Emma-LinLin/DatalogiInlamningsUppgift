@@ -25,7 +25,6 @@ namespace DatalogiInlamningsUppgift.ProgramLogic
             InputHelper helper = new InputHelper();
             while (true)
             {
-                
                 Console.WriteLine("Please enter a number: ");
                 int input = helper.ParseUserInput();
                 bool respons = calc.Calculate(input);
@@ -37,21 +36,22 @@ namespace DatalogiInlamningsUppgift.ProgramLogic
                 {
                     Console.WriteLine("That's not a prim number");
                 }
-
+                
+                Console.WriteLine();
                 Console.WriteLine("To print list enter [P]");
                 Console.WriteLine("To add next prim number to your list enter [A]");
                 Console.WriteLine("To quit enter [Q]");
 
-                string userInput = Console.ReadLine();
-                if (userInput == "Q" || userInput == "q")
+                string userInput = Console.ReadLine().ToLower();
+                if (userInput == "q")
                 {
                     break;
                 }
-                if (userInput == "P" || userInput == "p")
+                else if (userInput == "p")
                 {
                     calc.Print();
                 }
-                if (userInput == "A" || userInput == "a")
+                else if (userInput == "a")
                 {
                     calc.AddPrim();
                 }

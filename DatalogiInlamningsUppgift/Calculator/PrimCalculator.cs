@@ -16,7 +16,6 @@ namespace DatalogiInlamningsUppgift.Calculator
         /// <returns>boolean, true if prim number, false if not</returns>
         public bool Calculate(int number)
         {
-
             int dividers = default;
 
             for(int i = 1; i <= number; i++)
