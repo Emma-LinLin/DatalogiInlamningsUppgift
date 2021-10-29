@@ -77,6 +77,7 @@ namespace DatalogiInlamningsUppgift.Calculator
                 bool respons = Calculate(maxNumber);
                 if (respons)
                 {
+                    Console.WriteLine($"We've added {maxNumber} to your list of prims!");
                     break;
                 }
             }   
